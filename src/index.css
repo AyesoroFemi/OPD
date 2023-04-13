@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url("./fonts/CabinetGrotesk-Regular.ttf");
+}
+@font-face {
+  font-family: 'Cabinet_Grotesk';
+  src: url("./fonts/CabinetGrotesk-Bold.otf");
+}
+/* @font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url("./fonts/CabinetGrotesk-Bold.otf");
+} */
