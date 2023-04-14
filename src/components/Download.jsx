@@ -1,7 +1,7 @@
 import React from "react";
-import OffProApp from "../../../assets/OffPro-app.svg";
-import GooglePlay from "../../../assets/download.svg";
-import AppleStore from "../../../assets/download_btn.svg";
+import OffProApp from "../assets/OffPro-app.svg";
+import GooglePlay from "../assets/download.svg";
+import AppleStore from "../assets/download_btn.svg";
 
 function Download() {
   return (
