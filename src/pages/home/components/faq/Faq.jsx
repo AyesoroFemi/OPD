@@ -151,11 +151,11 @@ const data = [
 function Faq() {
   const [questions] = useState(data);
   return (
-    <div className="max-w-screen-lg mx-auto -translate-y-20">
-      <p className="text-[#6666FF] text-[36px] font-Cabinet_Grotesk text-center">
+    <div className="max-w-screen-lg mx-auto -translate-y-6  lg:-translate-y-20 px-4 lg:px-0">
+      <p className="text-[#6666FF] text-2xl lg:text-[36px] font-Cabinet_Grotesk text-center">
         Frequently asked question
       </p>
-      <div className="flex gap-8 translate-y-[36px] text-[#6B7280]">
+      <div className="flex flex-wrap gap-2 lg:gap-8 translate-y-[36px] text-[#6B7280]">
         <span className="hover:bg-[#6666FF] rounded-3xl px-4 hover:text-white py-1 text-sm ">
           All
         </span>
@@ -179,7 +179,7 @@ function Faq() {
         </span>
       </div>
       <main>
-        <div className="px-3 mx-auto pb-20 md:py-20 mt-2">
+        <div className="px-3 mx-auto pb-20 md:py-20 mt-16 lg:mt-2">
           <section className="">
             {questions.map((question) => {
               return (

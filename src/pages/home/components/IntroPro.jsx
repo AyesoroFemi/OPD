@@ -33,19 +33,19 @@ const items = [
 
 function IntroPro() {
   return (
-    <div className="mt-[99px] max-w-screen-xl mx-auto font-Grotesk">
-      <p className="text-center text-[#6666FF] font-Cabinet_Grotesk text-[36px] leading-[44px]">
+    <div className="mt-[99px] max-w-screen-xl mx-auto font-Grotesk px-4 lg:px-0">
+      <p className="text-center text-[#6666FF] font-Cabinet_Grotesk text-[24px]  lg:text-[36px] leading-[44px] lg:leading-[44px]">
         Introducing OffPro
       </p>
-      <p className="text-center text-[#6B7280] mt-4 text-xl font-Grotesk w-[55%] px-20 mx-auto">
+      <p className="text-center text-[#6B7280] mt-4 text-base lg:text-xl font-Grotesk px-4 lg:w-[55%] lg:px-20 mx-auto">
         This will be a unique product designed to allow offline transactions
         using an offline-ledger blockchain approach.
       </p>
-      <div className="flex gap-0 mt-20">
-        <div className="basis-1/2">
-          <img src={PhoneScreen} alt="phone-screen" />
+      <div className="flex flex-col-reverse lg:flex lg:flex-row gap-0 mt-20">
+        <div className="basis-1/2 flex justify-center lg:justify-start mt-16">
+          <img className="px-10 lg:px-0" src={PhoneScreen} alt="phone-screen" />
         </div>
-        <div className="basis-1/2 grid grid-cols-2 gap-6 h-min">
+        <div className="basis-1/2 grid lg:grid-cols-2 gap-6 h-min ">
           {items.map((item) => (
             <Card
               key={item.id}

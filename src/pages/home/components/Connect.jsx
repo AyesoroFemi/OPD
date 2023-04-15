@@ -34,29 +34,29 @@ const values = [
 
 function Connect() {
   return (
-    <div className="bg-[#F9FBFE] -translate-y-[150px] pt-[150px] pb-[99px]">
+    <div className="bg-[#F9FBFE]  -translate-y-[150px] pt-[73px] lg:pt-[150px] pb-[99px] px-4">
       <div className="max-w-screen-xl mx-auto ">
         <div>
-          <p className="text-[#6666FF] font-Cabinet_Grotesk text-[36px]">
+          <p className="text-[#6666FF] text-center lg:text-left font-Cabinet_Grotesk text-2xl lg:text-[36px]">
             How to connect to the OPD
           </p>
-          <div className="grid grid-cols-[50%_50%] gap-10">
+          <div className="grid lg:grid-cols-[50%_50%] gap-10">
             <div className="mt-[72px]">
               {values.map((value) => (
-                <div key={value.id} className="flex gap-10">
-                  <div className="mb-6">
+                <div key={value.id} className="flex gap-10 mb-6">
+                  <div className="">
                     <img src={value.Img} alt="" />
                   </div>
                   <div>
-                    <p className="font-Cabinet_Grotesk text-[#121212] text-2xl">
+                    <p className="font-Cabinet_Grotesk text-[#121212] text-xl lg:text-2xl">
                       {value.title}
                     </p>
-                    <p>{value.content}</p>
+                    <p className="pt-1">{value.content}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <div className="pt-10">
+            <div className="hidden lg:block pt-10">
               <img src={DummyMoney} alt="" />
             </div>
           </div>

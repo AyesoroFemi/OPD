@@ -1,4 +1,3 @@
-import React from "react";
 import Connect from "./components/Connect";
 import Download from "../../components/Download";
 import Faq from "./components/faq/Faq";
@@ -9,12 +8,12 @@ import Steps from "./components/Steps";
 function Home() {
   return (
     <div>
-      <Hero />;
+      <Hero />
       <IntroPro />
       <Steps />
       <Connect />
       <Faq />
-      <Download />
+      <Download /> 
     </div>
   );
 }

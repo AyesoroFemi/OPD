@@ -8,7 +8,7 @@ const Question = ({ title, info }) => {
         onClick={() => setShowInfo(!showInfo)}
         className="flex justify-between cursor-pointer"
       >
-        <h4 className="w-[90%] md:w-full text-base font-Grotesk mb-0">
+        <h4 className="w-[90%] md:w-full text-base font-Grotesk mb-0 pb-1">
           {title}
         </h4>
         <button className="">
