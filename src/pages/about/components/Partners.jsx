@@ -21,18 +21,24 @@ const items = [
 
 function Partners() {
   return (
-    <div className="max-w-screen-lg mx-auto mt-[104px] mb-10">
-      <p className="text-center font-Cabinet_Grotesk text-[36px] text-[#6666FF]">
+    <div className="max-w-screen-lg mx-auto mt-[104px] mb-10 px-4">
+      <p className="hidden lg:block text-center font-Cabinet_Grotesk text-[36px] text-[#6666FF]">
         Our Trusted Partners
       </p>
-      <p className="text-center w-[48%] font-Grotesk text-xl text-[#6B7280] mx-auto">
+      <p className="text-center font-Cabinet_Grotesk mb-2 text-2xl lg:hidden">
+        Integrations for every workflow
+      </p>
+      <p className="text-center lg:w-[54%] font-Grotesk text-base lg:text-xl text-[#6B7280] mx-auto">
         This will be a unique product designed to allow offline transactions
         using an offline-ledger blockchain approach.
       </p>
       <div>
-        <div className="grid grid-cols-4 gap-6 mt-[70px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-[70px]">
           {items.map((item) => (
-            <div key={item.id} className="rounded-md  flex justify-center bg-[#F3F4F6] px-[34px] py-[30px] ">
+            <div
+              key={item.id}
+              className="rounded-md  flex justify-center bg-[#F3F4F6] px-[34px] py-[30px] "
+            >
               <img src={item.name} alt={item.name} />
             </div>
           ))}

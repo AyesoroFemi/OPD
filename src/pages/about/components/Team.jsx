@@ -63,14 +63,14 @@ function Team() {
   return (
     <div>
       <div className="max-w-screen-xl mx-auto">
-        <p className="text-center font-Cabinet_Grotesk mt-20 text-[36px] text-[#6666FF]">
+        <p className="text-center font-Cabinet_Grotesk mt-20 text-[36px] text-[#111928] lg:text-[#6666FF]">
           Our team
         </p>
-        <p className="text-center w-[52%] font-Grotesk text-xl text-[#6B7280] mx-auto">
+        <p className="text-center w-[90%] lg:w-[52%] font-Grotesk text-base lg:text-xl text-[#6B7280] mx-auto">
           Explore the whole collection of open-source web components and
           elements built with the utility classes from Tailwind
         </p>
-        <div className="grid grid-cols-4 gap-6 mt-[52px]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 lg:gap-6 mt-[52px]">
           {avatars.map((avatar) => (
             <div className="flex flex-col items-center my-8">
               <img src={avatar.image} alt="" />
